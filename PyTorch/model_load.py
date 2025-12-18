@@ -5,3 +5,6 @@ model = NeuralNetwork().to(device)
 model.load_state_dict(torch.load("model.pth",weights_only=True))
 model.eval()
 #model.eval() -> disables training behaviour , correct inference mode
+
+model = NeuralNetwork().to(device)
+model.eval()
